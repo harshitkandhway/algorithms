@@ -9,6 +9,6 @@ public class LinearSearch {
             }
             count++;
         }
-        return  -1;
+        return -1;
     }
 }
