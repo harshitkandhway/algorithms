@@ -13,9 +13,9 @@ public class BubbleSort {
                     input[j] = temp;
                     swapped = true;
                 }
-            }
-            if (!swapped)
+                if (!swapped)
                 break;
+            }
         }
         //long endTime = System.nanoTime();
         //RunningTimeCalculation.printTimeToExecute(startTime,endTime);
