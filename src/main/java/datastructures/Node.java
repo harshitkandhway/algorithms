@@ -1,8 +1,8 @@
 package datastructures;
 
 public class Node {
-    int data;
-    Node ptr;
+    public int data;
+    public Node ptr;
 
     public Node(int data) {
         this.data = data;
