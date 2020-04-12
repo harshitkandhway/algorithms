@@ -25,4 +25,22 @@ public class IntersectionInSingleLinkedList {
         }
         return null;
     }
+
+//    public static Node findsIntersectionInOrderOfN(Node head1, Node head2){
+//
+//        while(head1!=null){
+//            check.add(head1);
+//            head1 = head1.ptr;
+//        }
+//        while(head2!=null){
+//            if(check.contains(head2))
+//                return head2;
+//            head2 = head2.ptr;
+//        }
+//        return null;
+//    }
+public static void main(String[] args) {
+
+}
+
 }

@@ -10,7 +10,7 @@ public class SelectionSort {
         for (int i = 0; i < n; i++) {
             skip = false;
             min = input[i];
-            for (int j = i + 1; j < n; j++) {//4,2,3,1 min  ->4 , min ->2 ,
+            for (int j = i + 1; j < n; j++) {
                 if (min > input[j]) {
                     min = input[j];
                     index = j;
@@ -22,7 +22,6 @@ public class SelectionSort {
                 input[index] = input[i] - input[index];
                 input[i] -= input[index];
             }
-            input[i] -= input[index];
         }
         return input;
     }

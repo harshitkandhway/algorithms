@@ -1,5 +1,25 @@
 package sort;
+/*
+    12,11,3,4,22
+    KEY = 11->3->4->22
+   3, 11,12,4,22 , KEY=4 (indexKey = 3, temp=(indexKey-1) = 2)
+   3, 11,11,12,22
+   while(array[temp]>key){
+   array[temp+1]=array[temp];
+   temp--;
+   }
+   array[temp+1] = KEY;
+   3,11,12,12,22
+   3,11,11,12,22
+   3,4,11,12,22
 
+
+    34,11,12,4,22
+    34,11,12,12,22
+    34,11,11,12,22
+    34,34,11,12,22
+
+ */
 public class InsertionSort {
     public static double[] insertionSort(double[] input) {
         int n = input.length;
