@@ -13,4 +13,5 @@ public class BinarySearchTest {
         int output = BinarySearch.binarySearch2(input,8);
         Assertions.assertThat(output).isEqualTo(3);
     }
+    
 }

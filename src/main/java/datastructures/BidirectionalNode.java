@@ -1,9 +1,9 @@
 package datastructures;
 
 public class BidirectionalNode {
-    int data;
-    BidirectionalNode next;
-    BidirectionalNode prev;
+    public int data;
+    public BidirectionalNode next;
+    public BidirectionalNode prev;
 
     public BidirectionalNode(BidirectionalNode prev,int data, BidirectionalNode next) {
         this.data = data;

@@ -6,7 +6,6 @@ public class SelectionSort {
         double min;
         int index = 0;
         boolean skip = false;
-
         for (int i = 0; i < n; i++) {
             skip = false;
             min = input[i];
