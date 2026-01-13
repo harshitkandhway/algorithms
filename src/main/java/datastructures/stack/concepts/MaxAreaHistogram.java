@@ -5,7 +5,7 @@ import javafx.util.Pair;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class MaxAreaHistogram {
+public class  MaxAreaHistogram {
     public static void main(String[] args) {
         int[] input = {6,2,5,4,5,1,6};
         //Expected output : 12

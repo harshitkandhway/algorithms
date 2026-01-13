@@ -13,13 +13,12 @@ J=0 => 2,4,5,7,8 , SWAPPED =FALSE ;
  */
 
 
-
+import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class BubbleSort {
     public static double[] bubbleSort(double[] input) {
-        //long startTime = System.nanoTime();
         double temp;
-
         for (int i = 0; i < input.length - 1; i++) {
             boolean swapped = false;
             for (int j = 0; j < input.length - 1 - i; j++) {
@@ -30,11 +29,26 @@ public class BubbleSort {
                     swapped = true;
                 }
                 if (!swapped)
-                break;
+                    break;
             }
         }
-        //long endTime = System.nanoTime();
-        //RunningTimeCalculation.printTimeToExecute(startTime,endTime);
         return input;
+    }
+
+    public static double[] bubbleSort2(double[] input) {
+        IntStream.range(0, input.length-1).forEach(i->{
+            IntStream.range(0, input.length-i-1).forEach(j->{
+                double temp = input[j];
+                if(input[j]>input[j+1]){
+                    input[j]=input[j+1];
+                    input[j+1]=temp;
+                }
+            });
+        });
+        return input;
+    }
+    public static void main(String args[]){
+        double[] num = {4,2,8,5,7};
+        Arrays.stream(bubbleSort2(num)).forEach(System.out::println);
     }
 }

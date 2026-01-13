@@ -33,9 +33,9 @@ public class AirtelInterviewQuestion {
     public static void main(String[] args) {
 
         HashMap<Integer,String> map = new HashMap<>();
-        map.put(1,"Apoorva");
-        map.put(2,"Harshit");
-        map.put(3,"Ayushi");
+        map.put(1,"Rohan");
+        map.put(2,"Microsoft");
+        map.put(3,"John");
         System.out.println("values : "+map.values());
         System.out.println("--------------");
         System.out.println("keyset : "+map.keySet());
